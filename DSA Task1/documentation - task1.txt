@@ -1,0 +1,69 @@
+## 🔹 1. Loops (`for`, `while`)
+
+You’ll use loops to go through the array and check pairs.
+
+Example:
+
+arr = [1, 2, 3]
+for i in range(len(arr)):
+    print(arr[i])
+
+
+## 🔹 2. Range Function
+
+`range()` helps generate index numbers for loops.
+
+Example:
+
+for i in range(5):
+    print(i)   # 0 to 4
+
+## 🔹 3. Conditional Statements (`if`)
+
+Used to check if two numbers sum to `K`.
+
+Example:
+
+a, b, K = 2, 4, 6
+if a + b == K:
+    print("They match!")
+
+
+## 🔹 4. Tuples
+
+You’ll likely return **pairs** as tuples `(a, b)`.
+
+Example:
+
+```python
+pair = (2, 4)
+print(pair[0], pair[1])   # 2, 4
+```
+
+---
+
+## 🔹 5. List Operations
+
+* `append()` to store pairs
+* Iterating over lists
+* Nested loops for comparing elements
+
+Example:
+
+pairs = []
+pairs.append((2, 4))
+print(pairs)   # [(2, 4)]
+
+
+## 🔹 6. Sets / Dictionaries (Optional, for efficiency)
+
+Example:
+
+
+seen = set()
+arr = [1, 5, 7, -1]
+K = 6
+for num in arr:
+    if (K - num) in seen:
+        print("Pair:", (num, K - num))
+    seen.add(num)
