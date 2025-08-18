@@ -1,0 +1,15 @@
+
+//TO RUN: terminal mai likho bhailang task5.py (should be in answers directory)
+
+hi bhai
+
+bhai ye hai number = 9;
+
+agar bhai (number % 3 == 0) {
+  bol bhai "Wizard";
+}
+warna bhai {
+  bol bhai "Muggle";
+}
+
+bye bhai
