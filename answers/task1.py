@@ -31,6 +31,6 @@ while running:
     pg.draw.line(screen, (255, 255, 255), (x - radius*2, y), (x - radius*4, y - 10), 3)  # left wing
     pg.draw.line(screen, (255, 255, 255), (x + radius*2, y), (x + radius*4, y - 10), 3)  # right wing
 
-    pg.display.flip()  # ✅ refresh screen
+    pg.display.flip()  # refresh screen
 
 pg.quit()
