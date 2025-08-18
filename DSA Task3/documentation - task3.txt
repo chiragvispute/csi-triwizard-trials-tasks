@@ -1,0 +1,40 @@
+🔹 1. Indexing and Negative Indexing
+
+In Python, arr[i] accesses elements, and arr[-1] gets the last element.
+
+Example:
+
+arr = [1, 2, 3, 2, 1]
+print(arr[0], arr[-1])  # 1, 1
+
+🔹 2. Loops
+
+You’ll compare elements from start and end using a loop.
+
+Example:
+
+arr = [1, 2, 3, 2, 1]
+for i in range(len(arr) // 2):
+    print(arr[i], arr[-(i+1)])
+
+🔹 3. Conditional Statements (if)
+
+Used to check if two elements are equal.
+
+Example:
+
+if arr[0] != arr[-1]:
+    print("Not palindrome")
+
+🔹 4. Built-in Functions (Optional Shortcuts)
+
+len(arr) → number of elements
+
+reversed(arr) → reverse order
+
+arr[::-1] → slicing to reverse a list
+
+Example:
+
+arr = [1, 2, 3, 2, 1]
+print(arr == arr[::-1])  # True
