@@ -1,0 +1,75 @@
+🔹 1) Lists (Dynamic Arrays)
+
+What: Python lists can store ordered data and let you add/remove elements.
+
+Example:
+
+items = [1, 2, 3]
+print(items[0])     # 1
+items.append(4)     # add at end
+print(items)        # [1, 2, 3, 4]
+
+🔹 2) Appending Elements
+
+What: Use .append() to add items to the end of a list.
+
+Example:
+
+queue = []
+queue.append("a")
+queue.append("b")
+print(queue)  # ['a', 'b']
+
+🔹 3) Removing Elements
+
+What: Use .pop(0) to remove the first element (like a queue).
+
+Example:
+
+queue = ["x", "y", "z"]
+first = queue.pop(0)
+print(first)   # 'x'
+print(queue)   # ['y', 'z']
+
+🔹 4) Checking Empty Queue
+
+What: Use len(list) or compare directly to [] to see if it’s empty.
+
+Example:
+
+q = []
+print(len(q) == 0)  # True
+print(q == [])      # True
+
+🔹 5) Classes (Optional, for Custom Queue)
+
+What: Classes let you group related data and methods.
+
+Example:
+
+class Example:
+    def __init__(self, name):
+        self.name = name
+
+    def say_hello(self):
+        print("Hello,", self.name)
+
+e = Example("Alice")
+e.say_hello()   # Hello, Alice
+
+🔹 6) Methods & self
+
+What: Inside a class, functions (methods) must take self as the first parameter.
+
+Example:
+
+class Counter:
+    def __init__(self):
+        self.count = 0
+
+    def add(self):
+        self.count += 1
+        return self.count
+
+c = Counter()
+print(c.add())  # 1

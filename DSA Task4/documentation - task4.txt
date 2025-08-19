@@ -1,39 +1,38 @@
-Since we can’t use Python’s reverse() or slicing shortcuts like s[::-1], we’ll need basic loop + string building.
+🔹 1) Strings in Python
 
-🔹 1. Strings in Python
-
-Strings are sequences of characters. You can loop through them or access individual characters by index.
+What: Strings are sequences of characters. You can access individual characters using indexes (positive or negative).
 
 Example:
 
-s = "magic"
-print(s[0], s[-1])  # m c
+s = "hello"
+print(s[0], s[-1])   # h o
 
-🔹 2. Loops
+🔹 2) Loops (for, while)
 
-Use for or while to traverse the string backwards.
+What: Loops allow you to traverse strings character by character. For reversing, you can iterate from the end to the start.
 
 Example:
 
-s = "magic"
-for i in range(len(s)-1, -1, -1):
-    print(s[i])
+s = "hello"
+for i in range(len(s) - 1, -1, -1):
+    print(s[i])   # o l l e h
 
-🔹 3. String Concatenation
+🔹 3) String Concatenation
 
-Build the reversed string step by step.
+What: Since strings are immutable, building a new string involves concatenation (+). You can prepend characters to gradually form the reverse.
 
 Example:
 
 rev = ""
-for ch in "magic":
-    rev = ch + rev   # prepend character
-print(rev)  # cigam
+for ch in "abc":
+    rev = ch + rev
+print(rev)   # cba
 
-🔹 4. len() Function
+🔹 4) len() Function
 
-Get string length for loop range.
+What: Returns the length of a string, which is helpful for loop ranges when accessing characters by index.
 
 Example:
 
-print(len("magic"))  # 5
+s = "world"
+print(len(s))   # 5

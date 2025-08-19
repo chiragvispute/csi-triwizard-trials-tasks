@@ -1,0 +1,49 @@
+🔹 1) Lists
+
+What: Ordered, mutable collections used to store multiple items.
+
+Example:
+
+nums = [1, 2, 3]
+nums.append(4)
+print(nums)  # [1, 2, 3, 4]
+
+🔹 2) Iteration Over Lists
+
+What: Loop through each element in a list using for.
+
+Example:
+
+for x in [10, 20, 30]:
+    print(x)
+
+🔹 3) Conditionals (if)
+
+What: Used to check conditions when processing elements.
+
+Example:
+
+n = 5
+if n > 3:
+    print("greater")
+
+🔹 4) Counters / Accumulators
+
+What: Keep a variable that is updated as you loop through values.
+
+Example:
+
+count = 0
+for c in "hello":
+    if c == "l":
+        count += 1
+print(count)  # 2
+
+🔹 5) Input Conversion
+
+What: Use input() for user values; split() + map() for list of numbers.
+
+Example:
+
+arr = list(map(int, input().split()))
+print(arr)  # e.g. input: 1 2 3 → [1, 2, 3]

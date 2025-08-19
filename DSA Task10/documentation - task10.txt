@@ -1,0 +1,66 @@
+🔹 1) Functions
+
+What: Functions group reusable blocks of code. You define with def and call by name.
+
+Example:
+
+def square(x):
+    return x * x
+
+print(square(4))  # 16
+
+🔹 2) Function Parameters
+
+What: Functions can take inputs (parameters) and return outputs.
+
+Example:
+
+def greet(name):
+    return "Hello " + name
+
+print(greet("Alice"))  # Hello Alice
+
+🔹 3) Recursion
+
+What: A function can call itself to solve smaller parts of a problem.
+
+Example:
+
+def countdown(n):
+    if n == 0:
+        print("Done!")
+    else:
+        print(n)
+        countdown(n - 1)
+
+countdown(3)  # 3, 2, 1, Done!
+
+🔹 4) Base Case in Recursion
+
+What: Every recursive function needs a stopping condition to avoid infinite calls.
+
+Example:
+
+def factorial(n):
+    if n == 0:
+        return 1   # base case
+    return n * factorial(n - 1)
+
+print(factorial(4))  # 24
+
+🔹 5) Input from User
+
+What: input() reads text from the user. Use int() to convert to a number.
+
+Example:
+
+num = int(input("Enter a number: "))
+print(num * 2)   # if input = 5 → prints 10
+
+🔹 6) Printing Output
+
+What: Use print() to show results.
+
+Example:
+
+print("Hello, world!")

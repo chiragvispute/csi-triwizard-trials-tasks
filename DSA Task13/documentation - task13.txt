@@ -1,0 +1,49 @@
+🔹 1) Lists
+
+What: Used to store student grades and adjusted results.
+
+Example:
+
+scores = [73, 67, 38, 33]
+print(scores[0])  # 73
+
+🔹 2) Iteration with for
+
+What: Process each grade one by one.
+
+Example:
+
+for grade in [50, 60, 70]:
+    print(grade + 5)
+
+🔹 3) Conditionals (if)
+
+What: Apply rules like “only round if grade >= 38.”
+
+Example:
+
+x = 45
+if x >= 40:
+    print("Pass")
+else:
+    print("Fail")
+
+🔹 4) Modulo Operator %
+
+What: Helps check remainder when dividing by 5 to find next multiple of 5.
+
+Example:
+
+num = 47
+print(num % 5)  # 2 (remainder when dividing by 5)
+
+🔹 5) List Building
+
+What: Append results to a new list while processing input.
+
+Example:
+
+new_scores = []
+for s in [10, 20, 30]:
+    new_scores.append(s + 1)
+print(new_scores)  # [11, 21, 31]

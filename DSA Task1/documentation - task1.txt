@@ -1,6 +1,6 @@
-## 🔹 1. Loops (`for`, `while`)
+🔹 1) Loops (for, while)
 
-You’ll use loops to go through the array and check pairs.
+What: Used to iterate over elements in a sequence like lists, strings, or ranges.
 
 Example:
 
@@ -8,62 +8,61 @@ arr = [1, 2, 3]
 for i in range(len(arr)):
     print(arr[i])
 
+🔹 2) range() Function
 
-## 🔹 2. Range Function
-
-`range()` helps generate index numbers for loops.
+What: Generates a sequence of numbers, often used for looping with indices.
 
 Example:
 
 for i in range(5):
-    print(i)   # 0 to 4
+    print(i)  # 0, 1, 2, 3, 4
 
-## 🔹 3. Conditional Statements (`if`)
+🔹 3) Conditional Statements (if)
 
-Used to check if two numbers sum to `K`.
-
-Example:
-
-a, b, K = 2, 4, 6
-if a + b == K:
-    print("They match!")
-
-
-## 🔹 4. Tuples
-
-You’ll likely return **pairs** as tuples `(a, b)`.
+What: Allow checking conditions and executing code accordingly.
 
 Example:
 
-```python
+x = 10
+if x > 5:
+    print("Greater than 5")
+
+🔹 4) Tuples
+
+What: Immutable sequences, often used to group related values together.
+
+Example:
+
 pair = (2, 4)
-print(pair[0], pair[1])   # 2, 4
-```
+print(pair[0], pair[1])  # 2, 4
 
----
+🔹 5) List Operations
 
-## 🔹 5. List Operations
-
-* `append()` to store pairs
-* Iterating over lists
-* Nested loops for comparing elements
+What: Lists support dynamic storage and operations like append(), iteration, and nested loops.
 
 Example:
 
-pairs = []
-pairs.append((2, 4))
-print(pairs)   # [(2, 4)]
+items = []
+items.append(42)
+print(items)  # [42]
+
+🔹 6) Sets / Dictionaries (Optional for efficiency)
+
+What:
+
+Sets store unique elements and support fast membership testing.
+
+Dictionaries map keys to values.
 
 
-## 🔹 6. Sets / Dictionaries (Optional, for efficiency)
-
-Example:
-
+Example (Set):
 
 seen = set()
-arr = [1, 5, 7, -1]
-K = 6
-for num in arr:
-    if (K - num) in seen:
-        print("Pair:", (num, K - num))
-    seen.add(num)
+seen.add(5)
+print(5 in seen)  # True
+
+
+Example (Dictionary):
+
+counts = {"a": 1, "b": 2}
+print(counts["a"])  # 1

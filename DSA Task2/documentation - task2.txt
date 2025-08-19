@@ -1,16 +1,15 @@
-🔹 1. Loops (for, while)
+🔹 1) Loops (for, while)
 
-You’ll iterate through the array to check numbers.
-
+What: Used to iterate over elements of a list or sequence.
 
 Example:
 
 for x in [1, 0, 2, 0, 3]:
     print(x)
 
-🔹 2. Conditional Statements (if)
+🔹 2) Conditional Statements (if)
 
-Check if an element is 0 or not.
+What: Used to check conditions and control program flow.
 
 Example:
 
@@ -18,13 +17,9 @@ x = 0
 if x == 0:
     print("This is zero")
 
-🔹 3. List Operations
+🔹 3) List Operations
 
-append() → to build a new array
-
-remove() / insert() (optional, if you modify in place)
-
-len() → get array size
+What: Lists allow adding, removing, and checking elements.
 
 Example:
 
@@ -32,12 +27,11 @@ arr = [1, 0, 2]
 arr.append(3)
 print(arr)  # [1, 0, 2, 3]
 
-🔹 4. Indexing
+🔹 4) Indexing
 
-You’ll need to access elements by index when rearranging.
+What: Elements in a list can be accessed using their index (starting from 0).
 
 Example:
 
 arr = [1, 2, 3]
 print(arr[0])  # 1
-

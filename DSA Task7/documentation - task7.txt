@@ -1,0 +1,59 @@
+🔹 1. String Splitting
+
+split() breaks a string into parts based on a separator (default = spaces).
+
+Example:
+
+text = "one two three"
+parts = text.split()
+print(parts)   # ['one', 'two', 'three']
+
+🔹 2. Lists
+
+Lists can hold multiple values. You can access by index or loop over them.
+
+Example:
+
+numbers = [10, 20, 30]
+print(numbers[0])   # 10
+print(numbers[-1])  # 30
+
+🔹 3. Loops
+
+for loops let you process each element in a sequence.
+
+Example:
+
+for item in [1, 2, 3]:
+    print(item)
+
+🔹 4. Measuring Length
+
+len() gives the size of a string, list, or other sequence.
+
+Example:
+
+print(len("hello"))   # 5
+print(len([1, 2, 3])) # 3
+
+🔹 5. Conditional Statements
+
+if allows decisions in code.
+
+Example:
+
+x = 5
+if x > 3:
+    print("x is greater than 3")
+
+🔹 6. Variables (Tracking Values)
+
+Variables store data that you can update as needed.
+
+Example:
+
+maximum = 0
+for n in [2, 8, 5]:
+    if n > maximum:
+        maximum = n
+print(maximum)   # 8

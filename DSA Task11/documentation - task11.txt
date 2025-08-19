@@ -1,0 +1,72 @@
+🔹 1) Loops (for, while)
+
+What: Repeat actions a fixed number of times or until a condition is met.
+
+Example:
+
+for i in range(3):
+    print("loop", i)
+
+j = 0
+while j < 3:
+    print("while", j)
+    j += 1
+
+🔹 2) range()
+
+What: Generate sequences of integers for indexing or counts.
+
+Example:
+
+for k in range(1, 6, 2):  # 1, 3, 5
+    print(k)
+
+🔹 3) String Multiplication & Concatenation
+
+What: Repeat characters ("*" * 5) and combine pieces with +.
+
+Example:
+
+bar = "-" * 4
+word = "hi" + "!" * 3
+print(bar)   # ----
+print(word)  # hi!!!
+
+🔹 4) Printing Options
+
+What: Control output with print(), including end to avoid newline.
+
+Example:
+
+print("A", end="")
+print("B")        # outputs "AB"
+
+🔹 5) Whitespace & Alignment (Optional)
+
+What: Add spaces for alignment or use formatting to center/right-align text.
+
+Example:
+
+text = "hi"
+print(f"{text:^6}")  # centers in width 6: '  hi  '
+print(f"{text:>6}")  # right-align: '    hi'
+
+🔹 6) Integer Arithmetic
+
+What: Use +, -, *, // to compute counts and widths.
+
+Example:
+
+width = 7
+level = 3
+stars = 2 * level - 1
+spaces = (width - stars) // 2
+
+🔹 7) Input Conversion
+
+What: Read a value with input() and convert to integer with int().
+
+Example:
+
+n = int(input("Enter a number: "))
+print(n + 1)

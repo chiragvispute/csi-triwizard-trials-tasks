@@ -1,0 +1,84 @@
+🔹 1) Strings (sequence basics)
+
+What: Strings are sequences of characters; you can access characters by index and iterate over them.
+
+Example:
+
+s = "hello"
+print(s[0])     # 'h'
+for ch in s:
+    print(ch)
+
+🔹 2) Indexing & Length
+
+What: Use zero-based indexing to access elements; len() returns the size of a sequence.
+
+Example:
+
+items = ["a", "b", "c"]
+print(items[2])   # 'c'
+print(len(items)) # 3
+
+🔹 3) Loops (for / while)
+
+What: Iterate over ranges or until a condition is met—useful for stepping through positions.
+
+Example:
+
+# for with range
+for i in range(5):
+    print(i)
+
+# while with condition
+i = 0
+while i < 3:
+    print(i)
+    i += 1
+
+🔹 4) Conditionals (if)
+
+What: Check bounds or decide which sequence to read from when indices differ.
+
+Example:
+
+x = 7
+if x % 2 == 1:
+    print("odd")
+else:
+    print("even")
+
+🔹 5) Building Strings Efficiently
+
+What: Since strings are immutable, build results via concatenation for small tasks or collect pieces in a list and ''.join() at the end.
+
+Example:
+
+# concatenation (simple)
+t = ""
+for ch in ["a", "b", "c"]:
+    t += ch
+
+# join (efficient for many parts)
+parts = ["a", "b", "c"]
+t2 = "".join(parts)
+
+🔹 6) Using range() Safely
+
+What: Generate indices; combine with min() or separate loops when sequences have different lengths.
+
+Example:
+
+n1, n2 = 3, 5
+limit = min(n1, n2)
+for i in range(limit):
+    print("paired index:", i)
+
+🔹 7) Slicing (Optional)
+
+What: Access remaining parts of a sequence if lengths differ.
+
+Example:
+
+s = "abcdef"
+print(s[3:])   # 'def'
+print(s[:3])   # 'abc'

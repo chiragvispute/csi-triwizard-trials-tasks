@@ -1,0 +1,62 @@
+🔹 1) Strings and Indexing
+
+What: Strings are sequences of characters. You can access characters using indices (s[i] for the i-th character). Negative indices access from the end.
+
+Example:
+
+s = "Hello"
+print(s[0], s[-1])   # H o
+
+🔹 2) ASCII / Unicode Conversion
+
+What: Python represents characters using Unicode. ord(char) gives the numeric code, and chr(num) converts it back to a character.
+
+Example:
+
+print(ord('A'))   # 65
+print(chr(65))    # A
+
+🔹 3) Arithmetic Operators
+
+What: To shift characters (e.g., Caesar Cipher), add a shift value to their numeric code. Use % (modulus) to wrap around alphabets.
+
+Example:
+
+shift = 3
+code = ord('Z')
+new_code = (code - ord('A') + shift) % 26 + ord('A')
+print(chr(new_code))   # C
+
+🔹 4) Conditional Statements (if)
+
+What: Use conditions to check whether a character is uppercase, lowercase, or non-alphabetic. Apply shifting only to alphabetic characters.
+
+Example:
+
+ch = "!"
+if ch.isalpha():
+    print("Alphabet")
+else:
+    print("Not alphabet")   # Not alphabet
+
+🔹 5) Loops
+
+What: Use a loop to process the string one character at a time.
+
+Example:
+
+s = "abc"
+for ch in s:
+    print(ch)
+
+🔹 6) String Building
+
+What: Strings are immutable. To build a modified version, accumulate characters in a new string (e.g., concatenation or list → join).
+
+Example:
+
+s = "abc"
+new_s = ""
+for ch in s:
+    new_s += ch.upper()
+print(new_s)   # ABC

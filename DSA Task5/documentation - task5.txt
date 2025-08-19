@@ -1,0 +1,41 @@
+🔹 1) Strings → Lists Conversion
+
+What: Since strings are immutable in Python, you cannot rearrange characters directly. To modify, you first convert the string into a list of characters.
+
+Example:
+
+s = "magic"
+chars = list(s)   
+print(chars)   # ['m', 'a', 'g', 'i', 'c']
+
+🔹 2) Sorting
+
+What: Lists can be sorted alphabetically or numerically. Strings must be converted into lists before sorting.
+
+Example:
+
+chars = ['c', 'a', 't']
+chars.sort()
+print(chars)   # ['a', 'c', 't']
+
+# OR using sorted() which returns a new list
+print(sorted("magic"))   # ['a', 'c', 'g', 'i', 'm']
+
+🔹 3) String Join
+
+What: After sorting, you may want to convert the list of characters back into a string using "".join(list).
+
+Example:
+
+chars = ['a', 'c', 'g', 'i', 'm']
+sorted_str = "".join(chars)
+print(sorted_str)   # acgim
+
+🔹 4) Case Sensitivity (Optional)
+
+What: Sorting is case-sensitive. By default, uppercase letters come before lowercase. To sort case-insensitively, use key=str.lower.
+
+Example:
+
+print(sorted("Magic"))             # ['M', 'a', 'c', 'g', 'i']
+print(sorted("Magic", key=str.lower))  # ['a', 'c', 'g', 'i', 'M']
