@@ -1,4 +1,3 @@
-# Check the playsound docs: https://pypi.org/project/playsound/
 
 from playsound import playsound
 
